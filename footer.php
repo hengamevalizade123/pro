@@ -155,7 +155,19 @@
 		</div>
 	</div>
 </footer>
+<div id="popup-overlay">
+	<div class="popup-box-content u-flex h-100 w-100 items-center justify-center">
+		<div id="popup-box" class="u-flex border-radius">
+			<div id="popup-close">×</div>
+			<!--			<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">-->
+			<a class="u-flex border-radius" href="https://barghapp.com/webinar-chp/">
+				<!--			<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/popuppaye.webp" alt="برقآپ">-->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-mobile.png" alt="برقآپ">
+			</a>
+		</div>
+	</div>
 
+</div>
 <?php wp_footer(); ?>
 
 </body>

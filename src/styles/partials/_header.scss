@@ -40,7 +40,7 @@ body:not(.home) header {
 		img {
 			width: 90px;
 			@include mq($until: md) {
-				width: 148px;
+				width: 100px;
 			}
 		}
 	}

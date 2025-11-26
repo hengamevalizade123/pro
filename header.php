@@ -42,7 +42,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="/about"
+									<a href="#"
 									   class="parent-sub-menu items-center u-flex gap-sm u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>">
 										خدمات ما
 										<span class="has-sub-menu"></span>
@@ -52,42 +52,42 @@
 											<a class="sub-menu second-sub-menu" href="#">تعرفه برق</a>
 
 										</li>
-										<li class="has-second-sub-menu"><a class="sub-menu second-sub-menu" href="/retail-electricity/">خرده فروشی برق</a>
+										<li class="has-second-sub-menu"><a class="sub-menu second-sub-menu" href="#">خرده فروشی برق</a>
 										</li>
-										<li><a class="sub-menu second-sub-menu" href="/قرارداد-دوجانبه-برق/">خرید برق دوجانبه</a></li>
-										<li><a class="sub-menu second-sub-menu" href="/برق-سبز-چیست؟/">خرید برق سبز</a></li>
-										<li><a class="sub-menu second-sub-menu" href="/stock-energy/">خرید برق از بورس انرژی</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">خرید برق دوجانبه</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">خرید برق سبز</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">خرید برق از بورس انرژی</a></li>
 										<li><a class="sub-menu second-sub-menu" href="#">برق قطع نشو</a></li>
-										<li><a class="sub-menu second-sub-menu" href="/purchase-of-electricity-above-one-megawatt/">خرید برق بالای یک مگاوات</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">خرید برق بالای یک مگاوات</a></li>
 									</ul>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="/contact-us/">
+									   href="#">
 										تماس با ما
 									</a>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="https://plus.barghapp.com/careers/">
+									   href="#">
 										همکاری با ما
 									</a>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="/about-us/">
+									   href="#">
 										درباره ی ما
 									</a>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="/faq">
+									   href="#">
 										سوالات متداول
 									</a>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="/category/blog/">
+									   href="#">
 										مقالات
 									</a>
 								</li>

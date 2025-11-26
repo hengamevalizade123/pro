@@ -29,7 +29,6 @@
 			position: relative;
 			&:before {
 				content: "";
-				width: 100%;
 				background: linear-gradient(to right, #ffffff 55%, transparent 55%),
 				linear-gradient(180deg, #131D30 0%, #1F3D65 100%);
 				right: -18px;
@@ -58,7 +57,7 @@
 	}
 
 	h1 {
-		@include font-size(28px, 1.8);
+		@include font-size(32px, 1.8);
 		color: var(--color-primary);
 		@include mq($until: sm) {
 			@include font-size(24px, 1.8);

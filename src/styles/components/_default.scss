@@ -142,7 +142,7 @@ svg {
 
 .c-title {
 	color: var(--color-primary);
-
+@include font-size(28px,1.6);
 	span {
 		color: var(--color-secondary);
 	}
@@ -151,6 +151,6 @@ svg {
 .sub-title {
 	color: var(--color-primary);
 	@include mq($until: sm) {
-		@include font-size(16px, 1.6)
+		@include font-size(18px, 1.6)
 	}
 }

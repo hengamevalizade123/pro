@@ -47,6 +47,65 @@
       } else {
         $(this).text("مشاهده بیشتر");
       }
+    }); // همبرگر منو
+
+    var hamburger = document.querySelector('.js-hamburger');
+
+    if (hamburger) {
+      var hamburgerMenu = function hamburgerMenu() {
+        document.getElementsByTagName('html')[0].classList.toggle('is-fixed');
+        document.querySelector('.js-navs').classList.toggle('is-open');
+      };
+
+      hamburger.addEventListener('click', hamburgerMenu, false);
+    } // popup
+
+
+    function shouldShowPopup() {
+      var lastSeen = localStorage.getItem('popupSeenTime');
+      if (!lastSeen) return true;
+      var now = Date.now();
+      var diffHours = (now - parseInt(lastSeen)) / (1000 * 60 * 60);
+      return diffHours >= 3;
+    }
+
+    function showPopup() {
+      $('#popup-overlay').fadeIn(300);
+      localStorage.setItem('popupSeenTime', Date.now());
+    }
+
+    if (shouldShowPopup()) {
+      setTimeout(showPopup, 3000);
+    } // Close on X click
+
+
+    $('#popup-close').click(function () {
+      $('#popup-overlay').fadeOut(250);
+    }); // Close on clicking outside the popup
+
+    $('#popup-overlay').click(function (e) {
+      if (e.target.id === 'popup-overlay') {
+        $('#popup-overlay').fadeOut(250);
+      }
+    }); // Close on clicking outside the popup
+
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('#popup-box').length) {
+        $('#popup-overlay').fadeOut(250);
+      }
+    }); // زمانی که روی منوی اصلی کلیک می‌شود
+
+    $('.parent-sub-menu').on('click', function (e) {
+      e.preventDefault();
+      if ($(window).width() >= 768) return;
+      var subMenu = $(this).next('ul');
+
+      if (subMenu.hasClass('open')) {
+        subMenu.removeClass('open');
+      } else {
+        $('.c-menu > li > ul.open').removeClass('open');
+        subMenu.addClass('open');
+      }
     });
   });
 })();
