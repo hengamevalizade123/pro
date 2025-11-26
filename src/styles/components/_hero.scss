@@ -1,0 +1,120 @@
+.c-section--hero {
+	background: linear-gradient(to right, #ffffff 66%, transparent 66%),
+	linear-gradient(180deg, #131D30 0%, #1F3D65 100%);
+	padding-top: 160px;
+	@include mq($until:md) {
+		background: none;
+		padding: 0;
+	}
+}
+
+.c-hero {
+	@include mq($until: md) {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__img {
+		width: 40%;
+
+		img {
+			max-height: 500px;
+			max-width: 100%;
+		}
+
+		@include mq($until: 650px) {
+			width: 100%;
+			justify-content: center;
+			padding-top: 140px;
+			position: relative;
+			&:before {
+				content: "";
+				width: 100%;
+				background: linear-gradient(to right, #ffffff 55%, transparent 55%),
+				linear-gradient(180deg, #131D30 0%, #1F3D65 100%);
+				right: -18px;
+				left: 0;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				z-index: -1;
+			}
+			img {
+				max-height: 360px;
+			}
+		}
+	}
+
+	&__info {
+		width: 60%;
+		text-align: center;
+		gap: 32px;
+		@include mq($until:md) {
+			width: 100%;
+		}
+		@include mq($until: md) {
+			gap: 16px;
+		}
+	}
+
+	h1 {
+		@include font-size(28px, 1.8);
+		color: var(--color-primary);
+		@include mq($until: sm) {
+			@include font-size(24px, 1.8);
+		}
+	}
+
+	p {
+		@include font-size(18px, 1.8);
+		color: var(--color-primary);
+		@include mq($until: md) {
+			@include font-size(15px, 1.8);
+		}
+	}
+
+	ul {
+		margin-top: 42px;
+		@include mq($until: md) {
+			gap: 8px;
+			margin-top: 24px;
+		}
+
+		li {
+			background: var(--color-primary);
+			padding: 24px;
+			transition: all .2s linear;
+			@include mq($until: sm) {
+				padding: 12px;
+			}
+
+			a {
+				@include font-size(16px, 1.6);
+				color: var(--color-white);
+				@include mq($until: sm) {
+					span {
+						display: none;
+					}
+				}
+			}
+
+			svg {
+				height: 48px;
+				width: 48px;
+			}
+
+			&:hover {
+				background: var(--color-secondary);
+			}
+		}
+	}
+
+	.c-action {
+		margin-top: 16px;
+		@include mq($until: sm) {
+			svg {
+				display: none;
+			}
+		}
+	}
+}

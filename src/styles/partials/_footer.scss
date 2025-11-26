@@ -1,0 +1,213 @@
+footer {
+	background: linear-gradient(180deg, #131d30 0, #1f3d65 100%);
+	margin-top: 24px;
+}
+
+.c-footer {
+	p, a, span {
+		color: var(--color-white-80);
+	}
+
+	a:hover {
+		color: var(--color-secondary);
+	}
+
+	&__top {
+		ul {
+			width: 85%;
+			background: var(--color-primary-dark);
+			margin: auto;
+			padding: 18px 36px;
+			margin-top: -46px;
+			@include mq($from: sm, $until: md) {
+				width: 100%;
+			}
+		}
+
+		img {
+			height: 28px;
+			@include mq($from: sm, $until: md) {
+				display: none;
+			}
+		}
+
+		span {
+			@include mq($from: sm, $until: md) {
+				@include font-size(14px, 1.6);
+			}
+		}
+
+		li {
+			padding: 8px 0;
+			position: relative;
+
+			&:not(:last-child) {
+				&:before {
+					content: "";
+					bottom: 0;
+					top: 0;
+					left: -8px;
+					width: 1px;
+					background: var(--color-white-40);
+					position: absolute;
+				}
+			}
+		}
+
+		@include mq($until: sm) {
+			display: none !important;
+		}
+	}
+
+	&__bottom {
+		border-bottom: 1px solid var(--color-primary-20);
+		padding: 48px 0;
+
+		@include mq($until: md) {
+			flex-wrap: wrap;
+			gap: 24px !important;
+		}
+	}
+
+	&__col {
+		&:first-child {
+			width: 40%;
+			@include mq($from: sm, $until: md) {
+				width: 44%;
+			}
+			@include mq($until: sm) {
+				width: 100%;
+			}
+		}
+
+		width: 20%;
+
+		&:nth-child(2) {
+			width: 15%;
+			@include mq($from: sm, $until: md) {
+				width: 17%;
+			}
+			@include mq($until: sm) {
+				width: calc(45% - 12px);
+			}
+		}
+
+		&:nth-child(3) {
+			width: 25%;
+			@include mq($from: sm, $until: md) {
+				width: 30%;
+			}
+			@include mq($until: sm) {
+				width: calc(55% - 12px);
+			}
+		}
+
+		p, a, strong {
+			@include font-size(14px, 2);
+		}
+
+		ul {
+			padding-right: 8px;
+		}
+
+		&:last-child {
+			margin: auto;
+			@include mq($from: sm, $until: md) {
+				width: 80%;
+			}
+			@include mq($until: sm) {
+				width: 100%;
+			}
+
+			li {
+				width: calc(50% - 8px);
+				@include mq($until: md) {
+					width: auto;
+				}
+
+				img {
+					height: 86px;
+					width: auto;
+					@include mq($until: sm) {
+						max-height: 74px;
+						max-width: 100%;
+					}
+				}
+			}
+
+			ul {
+				padding: 0;
+				@include mq($until: sm) {
+					flex-wrap: nowrap;
+				}
+			}
+		}
+	}
+
+	&__title {
+		color: var(--color-white);
+		@include font-size(18px, 1.8);
+		font-weight: 700;
+		@include mq($from: sm, $until: md) {
+			@include font-size(14px, 1.8);
+		}
+
+		img {
+			height: 48px;
+		}
+	}
+
+	&__copyright {
+		padding: 24px 0;
+		border-top: 1px solid var(--color-white-40);
+		@include mq($until: sm) {
+			justify-content: flex-end !important;
+			padding: 16px 0;
+		}
+
+		span {
+			@include font-size(14px, 1.6);
+			color: var(--color-white-80);
+			@include mq($until: sm) {
+				display: none;
+			}
+		}
+
+		a:hover svg path {
+			stroke: var(--color-secondary);
+		}
+	}
+}
+@keyframes slideIn {
+	from {
+		transform: translateY(15px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes pulse-glow {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 rgba(158, 191, 181, 0.5);
+	}
+	50% {
+		transform: scale(1.08);
+		box-shadow: 0 0 25px rgba(158, 191, 181, 0.8);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 rgba(158, 191, 181, 0.5);
+	}
+}
+@keyframes spin-shine {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

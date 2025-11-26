@@ -1,6 +1,6 @@
 {
 	"name": "wp-gulp",
-	"description": "A WPGulp based project.",
+	"videoription": "A WPGulp based project.",
 	"version": "0.0.1",
 	"repository": "https://gitlab.markitasdone.com/markitasdone/markitasdone/resources/wpgulp",
 	"license": "MIT",

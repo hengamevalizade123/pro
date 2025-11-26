@@ -1,14 +1,58 @@
 body,
 html {
-  font-family: $lato;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: $Ravi;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	&:before{
+		transition: all .3s linear;
+	}
 }
 
 body {
-  color: #000;
-  background: #fff;
+	color: #212121;
+	background: var(--color-white);
+	overflow-x: hidden;
 }
+body:not(.home) {
+background: #f9f9f9;
+}
+
 .main {
-  background-color: #fff;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.flickity-button:focus {
+	box-shadow: none;
+}
+
+.flickity-button {
+	border-radius: 0;
+}
+
+.carousel {
+	display: none;
+}
+
+.carousel.flickity-enabled {
+	display: block;
+}
+
+.carousel:after {
+	content: 'flickity';
+	display: none;
+}
+
+@include mq($from: md) {
+	.carousel:after {
+		content: '';
+	}
 }

@@ -1,0 +1,167 @@
+.c-section--home-video {
+	background: var(--bg-gray);
+}
+
+.c-home-video {
+	background: var(--color-primary);
+	position: relative;
+	max-width: 90%;
+	margin: auto;
+	@include mq($until: sm) {
+		max-width: 96%;
+	}
+	&__content {
+		padding: 36px 24px;
+		box-sizing: border-box;
+		gap: 36px;
+		@include mq($until: sm) {
+			padding: 46px 16px;
+		}
+
+		> img {
+			height: 70px;
+		}
+	}
+
+	.img-video-bef {
+		border-radius: $border-radius;
+		border: 6px solid var(--color-white);
+		position: absolute;
+		width: 160px;
+		bottom: 64px;
+		height: auto;
+		@include mq($from: sm, $until: desktop) {
+			width: 120px;
+		}
+		@include mq($until: sm) {
+			width: 100px;
+		}
+	}
+
+	.img-video-left {
+		left: -54px;
+		animation: 5s ease-in-out infinite floatLeft;
+		@include mq($until: desktop) {
+			left: 0;
+			top: -40px;
+		}
+	}
+
+	.img-video-right {
+		right: -54px;
+		animation: 3s ease-in-out infinite floatRight;
+		@include mq($from: sm, $until: desktop) {
+			bottom: -42px;
+			right: 0;
+		}
+		@include mq($until: sm) {
+			bottom: -76px;
+			right: 0;
+		}
+	}
+}
+
+//video
+.video-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 60%;
+	@include mq($from: md, $until: desktop) {
+		width: 70%;
+	}
+	@include mq($until: md) {
+		width: 85%;
+	}
+
+	img.cloud {
+		height: 90px;
+		position: absolute;
+		top: -32px;
+		right: -36px;
+		animation: 4s ease-in-out infinite float;
+		opacity: .8;
+		width: auto;
+		@include mq($until: md) {
+			height: 60px;
+		}
+	}
+}
+
+#myVideo {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: $border-radius;
+	min-height: 300px;
+	object-fit: cover;
+}
+
+.play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s ease;
+}
+
+.play-btn svg {
+	width: 90px;
+	height: 90px;
+	@include mq($until: md) {
+		width: 65px;
+		height: 65px;
+	}
+}
+
+.play-btn.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+@-webkit-keyframes float {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-18px);
+		transform: translateY(-18px)
+	}
+}
+
+@keyframes float {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0)
+	}
+
+	50% {
+		-webkit-transform: translateY(-18px);
+		transform: translateY(-18px)
+	}
+}
+
+@keyframes floatLeft {
+	0%, 100% {
+		transform: rotate(-16deg) translateY(0);
+	}
+	50% {
+		transform: rotate(-16deg) translateY(-20px);
+	}
+}
+
+@keyframes floatRight {
+	0%, 100% {
+		transform: rotate(16deg) translateY(0);
+	}
+	50% {
+		transform: rotate(16deg) translateY(-22px);
+	}
+}

@@ -1,0 +1,16 @@
+.c-home-banner{
+	.banner-mobile{
+		display: none;
+		@include mq($until:sm){
+			display: block;
+		}
+	}
+	.banner-desktop{
+		@include mq($until:sm){
+			display: none;
+		}
+	}
+	img{
+		height: auto;
+	}
+}

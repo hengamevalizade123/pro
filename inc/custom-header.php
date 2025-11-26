@@ -59,7 +59,7 @@ if ( ! function_exists( 'starter_theme_header_style' ) ) :
 		if ( ! display_header_text() ) :
 			?>
 			.site-title,
-			.site-description {
+			.site-videoription {
 				position: absolute;
 				clip: rect(1px, 1px, 1px, 1px);
 				}
@@ -68,7 +68,7 @@ if ( ! function_exists( 'starter_theme_header_style' ) ) :
 		else :
 			?>
 			.site-title a,
-			.site-description {
+			.site-videoription {
 				color: #<?php echo esc_attr( $header_text_color ); ?>;
 			}
 		<?php endif; ?>

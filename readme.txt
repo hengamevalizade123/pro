@@ -12,7 +12,7 @@ License URI: LICENSE
 
 A starter theme called Starter Theme.
 
-== Description ==
+== videoription ==
 
 Wordpress theme designed by Markitasdone.Com
 

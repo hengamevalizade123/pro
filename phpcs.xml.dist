@@ -5,8 +5,8 @@
 	<!-- See https://github.com/WPTRT/WPThemeReview -->
 	<!-- See https://github.com/PHPCompatibility/PHPCompatibilityWP -->
 
-	<!-- Set a description for this ruleset. -->
-	<description>A custom set of code standard rules to check for WordPress themes.</description>
+	<!-- Set a videoription for this ruleset. -->
+	<videoription>A custom set of code standard rules to check for WordPress themes.</videoription>
 
 
 	<!--
