@@ -508,7 +508,6 @@ body:not(.home) header {
 
 	&.is-open {
 		transform: translate(0, 0);
-		width: 70%;
 		@include mq(md) {
 			transform: none;
 		}
