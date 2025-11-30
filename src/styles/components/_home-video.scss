@@ -16,10 +16,14 @@
 		gap: 36px;
 		@include mq($until: sm) {
 			padding: 46px 16px;
+			gap: 24px;
 		}
 
 		> img {
 			height: 70px;
+			@include mq($until: sm) {
+				height: 48px;
+			}
 		}
 	}
 
@@ -41,7 +45,7 @@
 	.img-video-left {
 		left: -54px;
 		animation: 5s ease-in-out infinite floatLeft;
-		@include mq($until: desktop) {
+		@include mq($until: sm) {
 			left: 0;
 			top: -40px;
 		}
@@ -50,11 +54,13 @@
 	.img-video-right {
 		right: -54px;
 		animation: 3s ease-in-out infinite floatRight;
+		top: 48px;
 		@include mq($from: sm, $until: desktop) {
 			bottom: -42px;
 			right: 0;
 		}
 		@include mq($until: sm) {
+			top: auto;
 			bottom: -76px;
 			right: 0;
 		}

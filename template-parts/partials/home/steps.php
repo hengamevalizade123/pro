@@ -1,4 +1,4 @@
-<section class="o-section c-section--steps">
+<section class="o-section c-section--steps relative">
 	<div class="o-section__wrapper">
 		<div class="c-home-steps">
 			<div class="c-sec-title txt-center">
@@ -70,11 +70,16 @@
 						</p>
 					</li>
 					<li>
-						<img class="img-video-bef img-video-left border-radius w-100" src="<?php echo get_template_directory_uri(); ?>/assets/images/final-step.webp"
-							 alt="برقآپ">
+						<a class="u-flex" href="https://adm.barghapporo.com/login?redirect=%2F">
+							<img class="img-video-bef img-video-left border-radius w-100"
+								 src="<?php echo get_template_directory_uri(); ?>/assets/images/final-step.webp"
+								 alt="برقآپ">
+						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<img class="before-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/video-before.png"
+		 alt="برقآپ">
 </section>

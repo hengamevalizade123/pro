@@ -8,6 +8,7 @@ include get_template_directory() . '/template-parts/partials/home/home-desc.php'
 include get_template_directory() . '/template-parts/partials/home/home-video.php';
 include get_template_directory() . '/template-parts/partials/home/steps.php';
 include get_template_directory() . '/template-parts/partials/home/home-banner.php';
+include get_template_directory() . '/template-parts/partials/home/faq.php';
 include get_template_directory() . '/template-parts/partials/home/home-blog.php';
 
 get_footer();

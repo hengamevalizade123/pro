@@ -33,6 +33,24 @@
 		});
 	});
 	jQuery(document).ready(function ($) {
+		// faq
+		if ($('.faq-question').length) {
+		$('.faq-question').click(function (e) {
+			e.preventDefault();
+			var answer = $(this).next('.faq-answer');
+			var toggle = $(this).find('.faq-toggle');
+
+			if (answer.is(':visible')) {
+				answer.slideUp();
+				$(this).removeClass('active');
+			} else {
+				$('.faq-answer').slideUp();
+				$('.faq-question').removeClass('active');
+				answer.slideDown();
+				$(this).addClass('active');
+			}
+		});
+		}
 		//   home desc
 		const $btn = $(".more-toggle");
 		$btn.on("click", function () {

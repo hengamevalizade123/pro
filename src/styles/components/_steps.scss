@@ -4,6 +4,7 @@
 	}
 	ul{
 		li{
+			background: var(--color-white);
 			width: calc(33.33% - 11px);
 			border-radius: $border-radius;
 			border: 1px solid var(--color-grey);
@@ -48,4 +49,10 @@
 		color: var(--color-dark);
 		margin-bottom: 14px;
 	}
+}
+.before-img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 }
