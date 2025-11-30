@@ -5,8 +5,8 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-pro.svg"
 						 alt="برقآپ">
 					<div class="video-wrapper">
-						<img class="cloud" src="<?php echo get_template_directory_uri(); ?>/assets/images/cloud.png"
-							 alt="برقآپ">
+<!--						<img class="cloud" src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/cloud.png"-->
+<!--							 alt="برقآپ">-->
 						<video id="myVideo" poster="<?php echo get_template_directory_uri(); ?>/assets/images/pro-poster-vide.png">
 							<source src="https://www.pro.barghapp.com/wp-content/uploads/2025/11/pro.mp4" type="video/mp4">
 							مرورگر شما از تگ ویدیو پشتیبانی نمی‌کند.

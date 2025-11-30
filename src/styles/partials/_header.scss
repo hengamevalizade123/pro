@@ -23,23 +23,27 @@ body:not(.home) header {
 	}
 
 	nav {
-		@include mq($until: md) {
+		@include mq($until: desktop) {
 			order: 1;
 			flex: 1
 		}
 	}
 
 	.header-logo {
-		@include mq($until: md) {
+		@include mq($until: desktop) {
 			order: 2;
 			flex: 1;
 			z-index: 100;
 			position: relative;
+			justify-content: center;
 		}
 
 		img {
 			width: 90px;
-			@include mq($until: md) {
+			@include mq($from:sm,$until: desktop) {
+				width: 100px;
+			}
+			@include mq($until: sm) {
 				width: 100px;
 			}
 		}
@@ -48,7 +52,7 @@ body:not(.home) header {
 
 	&__cta {
 		gap: 8px;
-		@include mq($until: md) {
+		@include mq($until: desktop) {
 			order: 3;
 			flex: 1
 		}
@@ -112,7 +116,7 @@ body:not(.home) header {
 	list-style: none;
 	z-index: 10;
 	background: linear-gradient(0deg, #031232 0%, #244065 100%);
-	@include mq(md) {
+	@include mq(desktop) {
 		flex-direction: row;
 		position: unset;
 		transform: none;
@@ -164,7 +168,7 @@ body:not(.home) header {
 	@include mq($from: desktop, $until: 1100px) {
 		gap: 8px;
 	}
-	@include mq(md) {
+	@include mq(desktop) {
 		flex-direction: row;
 		gap: 1em;
 		align-content: center;
@@ -176,7 +180,7 @@ body:not(.home) header {
 		padding-right: 0;
 		gap: 1.25em;
 	}
-	@include mq($until: md) {
+	@include mq($until: desktop) {
 		overflow-y: scroll;
 		li:first-child {
 			display: flex;
@@ -219,7 +223,7 @@ body:not(.home) header {
 				}
 			}
 
-			@include mq($until: md) {
+			@include mq($until: desktop) {
 				display: none;
 			}
 		}
@@ -240,7 +244,7 @@ body:not(.home) header {
 			@include mq($from: desktop, $until: 1100px) {
 				padding: 8px 0;
 			}
-			@include mq(md) {
+			@include mq(desktop) {
 				&:hover {
 					color: var(--color-primary);
 
@@ -293,7 +297,7 @@ body:not(.home) header {
 				bottom: 100%;
 				right: 0;
 				position: absolute;
-				@include mq($until: md) {
+				@include mq($until: desktop) {
 					display: none;
 				}
 			}
@@ -321,7 +325,7 @@ body:not(.home) header {
 
 				}
 
-				@include mq(md) {
+				@include mq(desktop) {
 					&:first-of-type {
 						a {
 							border-radius: 4px;
@@ -338,7 +342,7 @@ body:not(.home) header {
 				}
 			}
 
-			@include mq($until: md) {
+			@include mq($until: desktop) {
 				//display: none;
 				position: relative;
 				background: none;
@@ -366,7 +370,7 @@ body:not(.home) header {
 			}
 		}
 
-		@include mq(md) {
+		@include mq(desktop) {
 			&:hover {
 				> ul {
 					top: 68px;
@@ -399,7 +403,7 @@ body:not(.home) header {
 	user-select: none;
 	width: 24px;
 
-	@include mq(md) {
+	@include mq(desktop) {
 		display: none;
 		position: unset;
 
@@ -426,7 +430,7 @@ body:not(.home) header {
 	z-index: 2;
 	-webkit-touch-callout: none;
 
-	@include mq(md) {
+	@include mq(desktop) {
 		display: none;
 	}
 }
@@ -508,7 +512,7 @@ body:not(.home) header {
 
 	&.is-open {
 		transform: translate(0, 0);
-		@include mq(md) {
+		@include mq(desktop) {
 			transform: none;
 		}
 	}

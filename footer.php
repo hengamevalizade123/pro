@@ -40,10 +40,13 @@
 							<a href="#" title="تماس با ما">تماس با ما</a>
 						</li>
 						<li>
-							<a href="#" title="چرا برقآپ">چرا برق‌آپ</a>
+							<a href="#" title="چرا برقآپ">چرا برق‌آپ پرو</a>
 						</li>
 						<li>
-							<a href="#" title="بلاگ برقآپ">بلاگ برق‌آپ</a>
+							<a href="#" title="بلاگ برقآپ">
+								بلاگ برق‌آپ
+								پرو
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -65,7 +68,7 @@
 							<strong class="d-block color-white">
 								تماس با ما :
 							</strong>
-							<a href="tel:+989100462723" title="پشتیبانی">۰۲۱-۹۱۰۱۱۵۲۲ | ۰۹۱۲۲۷۱۴۹۸۰ | ۰۲۱-۹۱۰۰۱۷۵۰
+							<a class="u-flex" href="tel:+989910532898" title="پشتیبانی">۰۹۹۱۰۵۳۲۸۹۸
 							</a>
 							<a href="mailto:info@pro.barghapp.com">info@pro.barghapp.com</a>
 						</li>
@@ -111,10 +114,10 @@
 		</div>
 		<div class="c-footer__copyright u-flex space-between">
 				<span class="u-flex items-center">
-					کلیه حقوق وب‌سایت محفوظ و متعلق به شرکت برق‌آپ پرو می‌باشد.
+					کلیه حقوق وب‌سایت محفوظ و متعلق به برق‌آپ می‌باشد.
 				</span>
 			<div class="c-footer__social u-flex gap-md">
-				<a href="#" aria-label="اینستاگرام">
+				<a href="https://www.instagram.com/bargh.app/?igsh=eDh2MHFraG5zZWZn#" aria-label="اینستاگرام">
 					<svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M16.2748 43H28.5107C38.7072 43 42.7858 38.9214 42.7858 28.7249V16.489C42.7858 6.29248 38.7072 2.21387 28.5107 2.21387H16.2748C6.07828 2.21387 1.99966 6.29248 1.99966 16.489V28.7249C1.99966 38.9214 6.07828 43 16.2748 43Z"
@@ -139,7 +142,7 @@
 							stroke="#ffff" stroke-opacity="0.7" stroke-width="2.5" stroke-miterlimit="10"/>
 					</svg>
 				</a>
-				<a href="#" aria-label="یوتیوب">
+				<a href="https://www.aparat.com/Barghapplication" aria-label="آپارات">
 					<svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M32.7849 42.7905H12.3897C6.27109 42.7905 2.19205 37.6917 2.19205 30.0434V14.747C2.19205 7.09881 6.27109 2 12.3897 2H32.7849C38.9035 2 42.9825 7.09881 42.9825 14.747V30.0434C42.9825 37.6917 38.9035 42.7905 32.7849 42.7905Z"
@@ -162,7 +165,7 @@
 			<!--			<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">-->
 			<a class="u-flex border-radius" href="https://barghapp.com/webinar-chp/">
 				<!--			<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/popuppaye.webp" alt="برقآپ">-->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner-mobile.png" alt="برقآپ">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popup.jpg" alt="برقآپ">
 			</a>
 		</div>
 	</div>

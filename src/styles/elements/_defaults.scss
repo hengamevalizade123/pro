@@ -4,6 +4,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	&:before{
 		transition: all .3s linear;
 	}
@@ -55,4 +56,7 @@ li {
 	.carousel:after {
 		content: '';
 	}
+}
+.carousel-cell {
+	min-height: 100%;
 }

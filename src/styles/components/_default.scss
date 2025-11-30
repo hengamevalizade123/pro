@@ -107,7 +107,9 @@
 .justify-end {
 	justify-content: flex-end;
 }
-
+.items-end{
+	align-items: flex-end;
+}
 .cover {
 	object-fit: cover;
 }

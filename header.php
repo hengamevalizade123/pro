@@ -48,17 +48,8 @@
 										<span class="has-sub-menu"></span>
 									</a>
 									<ul class="u-flex u-flex--column">
-										<li class="has-second-sub-menu">
-											<a class="sub-menu second-sub-menu" href="#">تعرفه برق</a>
-
-										</li>
-										<li class="has-second-sub-menu"><a class="sub-menu second-sub-menu" href="#">خرده فروشی برق</a>
-										</li>
-										<li><a class="sub-menu second-sub-menu" href="#">خرید برق دوجانبه</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">خرید برق سبز</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">خرید برق از بورس انرژی</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">برق قطع نشو</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">خرید برق بالای یک مگاوات</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های CHP</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های خورشیدی</a></li>
 									</ul>
 								</li>
 								<li>
@@ -102,26 +93,16 @@
 					</nav>
 					<div class="c-main-header__cta u-flex items-center">
 						<a class="c-main-header__panel u-flex items-center border-radius gap-sm secondary-btn"
-						   href="https://barghapp.com/catalogue/pro.pdf">
-							دانلود کاتالوگ
-							<svg width="24" height="24" viewBox="0 0 49 49" fill="none"
-								 xmlns="http://www.w3.org/2000/svg">
-								<path d="M24.5 4.08333V16.3333L28.5833 12.25" stroke="white" stroke-width="3.0625"
-									  stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M24.5 16.3333L20.4167 12.25" stroke="white" stroke-width="3.0625"
-									  stroke-linecap="round" stroke-linejoin="round"/>
-								<path
-									d="M14.2917 24.5C6.125 24.5 6.125 28.1546 6.125 32.6667V34.7083C6.125 40.3433 6.125 44.9167 16.3333 44.9167H32.6667C40.8333 44.9167 42.875 40.3433 42.875 34.7083V32.6667C42.875 28.1546 42.875 24.5 34.7083 24.5C32.6667 24.5 32.095 24.9288 31.0333 25.725L28.9508 27.93C26.5417 30.5025 22.4583 30.5025 20.0288 27.93L17.9667 25.725C16.905 24.9288 16.3333 24.5 14.2917 24.5Z"
-									stroke="white" stroke-width="3.0625" stroke-miterlimit="10" stroke-linecap="round"
-									stroke-linejoin="round"/>
-								<path d="M10.2083 24.5V16.3333C10.2083 12.2296 10.2083 8.8404 16.3333 8.24832"
-									  stroke="white" stroke-width="3.0625" stroke-miterlimit="10" stroke-linecap="round"
-									  stroke-linejoin="round"/>
-								<path d="M38.7917 24.5V16.3333C38.7917 12.2296 38.7917 8.8404 32.6667 8.24832"
-									  stroke="white" stroke-width="3.0625" stroke-miterlimit="10" stroke-linecap="round"
-									  stroke-linejoin="round"/>
+						   href="https://adm.barghapporo.com/" target="_blank">
+							<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.75 15.17H4.96C1.59 15.17 0.75 14.33 0.75 10.96V4.96C0.75 1.59 1.59 0.75 4.96 0.75H15.49C18.86 0.75 19.7 1.59 19.7 4.96" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.75 19.6898V15.1699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M0.75 11.1699H8.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M5.49023 19.6899H8.7502" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M20.7503 11.0201V16.7301C20.7503 19.1001 20.1603 19.6901 17.7903 19.6901H14.2403C11.8703 19.6901 11.2803 19.1001 11.2803 16.7301V11.0201C11.2803 8.65007 11.8703 8.06006 14.2403 8.06006H17.7903C20.1603 8.06006 20.7503 8.65007 20.7503 11.0201Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M15.9941 16.4697H16.0031" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg>
-
+							ورود به سامانه
 						</a>
 					</div>
 				</div>

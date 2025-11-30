@@ -1,10 +1,40 @@
 .c-section--hero {
-	background: linear-gradient(to right, #ffffff 66%, transparent 66%),
-	linear-gradient(180deg, #131D30 0%, #1F3D65 100%);
+	//background: linear-gradient(to right, #ffffff 66%, transparent 66%),
+	//linear-gradient(180deg, #131D30 0%, #1F3D65 100%);
 	padding-top: 160px;
 	@include mq($until:md) {
-		background: none;
-		padding: 0;
+		padding-top: 120px;
+	}
+	.hero-ext{
+		position: absolute;
+		bottom: 0;
+		max-width: 28%;
+		height: auto;
+		@include mq($from:desktop,$until:desktopAd){
+			bottom: 20%;
+		}
+		@include mq($from:md,$until:desktop){
+			max-width: 32%;
+		}
+	}
+	.hero-after{
+		left: 0;
+		@include mq($from:sm,$until:desktop){
+			top: 20%;
+		}
+		@include mq($until:sm){
+			position: relative;
+			max-width: 100%;
+		}
+	}
+	.hero-before{
+		right: 0;
+		@include mq($from:sm,$until:desktop){
+			bottom: 20%;
+		}
+		@include mq($until:sm){
+			display: none;
+		}
 	}
 }
 
@@ -20,9 +50,12 @@
 		img {
 			max-height: 500px;
 			max-width: 100%;
+			@include mq($until: desktop) {
+				max-width: unset;
+			}
 		}
 
-		@include mq($until: 650px) {
+		@include mq($until: md) {
 			width: 100%;
 			justify-content: center;
 			padding-top: 140px;
@@ -48,7 +81,8 @@
 		width: 60%;
 		text-align: center;
 		gap: 32px;
-		@include mq($until:md) {
+		margin: auto;
+		@include mq($until:desktop) {
 			width: 100%;
 		}
 		@include mq($until: md) {
@@ -59,6 +93,9 @@
 	h1 {
 		@include font-size(32px, 1.8);
 		color: var(--color-primary);
+		@include mq($until: 1100px) {
+			span{display: block}
+		}
 		@include mq($until: sm) {
 			@include font-size(24px, 1.8);
 		}
@@ -81,14 +118,14 @@
 
 		li {
 			background: var(--color-primary);
-			padding: 24px;
+			padding: 16px;
 			transition: all .2s linear;
 			@include mq($until: sm) {
 				padding: 12px;
 			}
 
 			a {
-				@include font-size(16px, 1.6);
+				@include font-size(18px, 1.6);
 				color: var(--color-white);
 				@include mq($until: sm) {
 					span {
@@ -101,7 +138,10 @@
 				height: 48px;
 				width: 48px;
 			}
-
+			img{
+				height: 56px;
+				width: 56px;
+			}
 			&:hover {
 				background: var(--color-secondary);
 			}

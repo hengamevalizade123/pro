@@ -38,12 +38,22 @@
 		a{
 			color: var(--color-primary);
 			font-weight: bold;
-			@include font-size(18px,1.6);
+			@include font-size(16px,1.6);
 			transition: all .2s linear;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			height: 48px;
 		}
 		p{
 			@include font-size(14px,1.6);
 			color: var(--color-text);
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+			height: 90px;
 		}
 	}
 }
@@ -59,4 +69,10 @@
 		@include font-size(14px,1.6);
 		transition: all .2s linear;
 	}
+}
+.dot.is-selected{
+	background: var(--color-secondary);
+}
+.flickity-page-dots{
+	bottom: -40px;
 }
