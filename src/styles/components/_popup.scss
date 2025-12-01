@@ -34,7 +34,7 @@
 	top: 10px;
 	left: 20px;
 	cursor: pointer;
-	@include font-size(36px,1.6);
+	@include font-size(36px,1);
 	color: var(--color-white);
 	transition: 0.25s;
 }

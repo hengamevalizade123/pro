@@ -2,7 +2,6 @@
 (function () {
 	'use strict';
 	document.addEventListener('DOMContentLoaded', function () {
-		// Your custom JavaScript goes here
 		// header fixed scroll
 		window.addEventListener("scroll", function () {
 			const header = document.querySelector("#masthead");
@@ -18,38 +17,38 @@
 		const video = document.getElementById("myVideo");
 		const btn = document.getElementById("playBtn");
 
-		btn.addEventListener("click", function() {
+		btn.addEventListener("click", function () {
 			video.setAttribute("controls", "controls"); // ← کنترل‌ها را فعال کن
 			video.play();
 			btn.classList.add("hidden");
 		});
 
-		video.addEventListener("pause", function() {
+		video.addEventListener("pause", function () {
 			btn.classList.remove("hidden"); // دکمه برگرده
 		});
 
-		video.addEventListener("ended", function() {
+		video.addEventListener("ended", function () {
 			btn.classList.remove("hidden"); // وقتی تموم شد
 		});
 	});
 	jQuery(document).ready(function ($) {
-		// faq
+		// Faq
 		if ($('.faq-question').length) {
-		$('.faq-question').click(function (e) {
-			e.preventDefault();
-			var answer = $(this).next('.faq-answer');
-			var toggle = $(this).find('.faq-toggle');
+			$('.faq-question').click(function (e) {
+				e.preventDefault();
+				var answer = $(this).next('.faq-answer');
+				var toggle = $(this).find('.faq-toggle');
 
-			if (answer.is(':visible')) {
-				answer.slideUp();
-				$(this).removeClass('active');
-			} else {
-				$('.faq-answer').slideUp();
-				$('.faq-question').removeClass('active');
-				answer.slideDown();
-				$(this).addClass('active');
-			}
-		});
+				if (answer.is(':visible')) {
+					answer.slideUp();
+					$(this).removeClass('active');
+				} else {
+					$('.faq-answer').slideUp();
+					$('.faq-question').removeClass('active');
+					answer.slideDown();
+					$(this).addClass('active');
+				}
+			});
 		}
 		//   home desc
 		const $btn = $(".more-toggle");
@@ -64,7 +63,7 @@
 				$(this).text("مشاهده بیشتر");
 			}
 		});
-		// همبرگر منو
+		// Hamburger Menu
 		var hamburger = document.querySelector('.js-hamburger');
 
 		if (hamburger) {
@@ -75,7 +74,8 @@
 
 			hamburger.addEventListener('click', hamburgerMenu, false);
 		}
-		// popup
+
+		// Popup
 		function shouldShowPopup() {
 			const lastSeen = localStorage.getItem('popupSeenTime');
 			if (!lastSeen) return true;
@@ -86,7 +86,6 @@
 			return diffHours >= 3;
 		}
 
-
 		function showPopup() {
 			$('#popup-overlay').fadeIn(300);
 			localStorage.setItem('popupSeenTime', Date.now());
@@ -96,22 +95,19 @@
 			setTimeout(showPopup, 3000);
 		}
 
-
-// Close on X click
+		// Close on X click
 		$('#popup-close').click(function () {
 			$('#popup-overlay').fadeOut(250);
 		});
 
-
-// Close on clicking outside the popup
+		// Close on clicking outside the popup
 		$('#popup-overlay').click(function (e) {
 			if (e.target.id === 'popup-overlay') {
 				$('#popup-overlay').fadeOut(250);
 			}
 		});
 
-
-// Close on clicking outside the popup
+		// Close on clicking outside the popup
 		$(document).on('click', function (e) {
 			if (!$(e.target).closest('#popup-box').length) {
 				$('#popup-overlay').fadeOut(250);
@@ -135,6 +131,5 @@
 				subMenu.addClass('open');
 			}
 		});
-
 	});
 })();

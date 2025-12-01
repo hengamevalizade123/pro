@@ -93,7 +93,7 @@
 					</nav>
 					<div class="c-main-header__cta u-flex items-center">
 						<a class="c-main-header__panel u-flex items-center border-radius gap-sm secondary-btn"
-						   href="https://adm.barghapporo.com/" target="_blank">
+						   href="https://preview.barghapporo.com/login?redirect=%2F" target="_blank">
 							<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.75 15.17H4.96C1.59 15.17 0.75 14.33 0.75 10.96V4.96C0.75 1.59 1.59 0.75 4.96 0.75H15.49C18.86 0.75 19.7 1.59 19.7 4.96" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M8.75 19.6898V15.1699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>

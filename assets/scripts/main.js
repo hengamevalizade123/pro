@@ -5,7 +5,6 @@
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-    // Your custom JavaScript goes here
     // header fixed scroll
     window.addEventListener("scroll", function () {
       var header = document.querySelector("#masthead");
@@ -32,7 +31,7 @@
     });
   });
   jQuery(document).ready(function ($) {
-    // faq
+    // Faq
     if ($('.faq-question').length) {
       $('.faq-question').click(function (e) {
         e.preventDefault();
@@ -62,7 +61,7 @@
         $(this).text("مشاهده بیشتر");
       }
     });
-    // همبرگر منو
+    // Hamburger Menu
     var hamburger = document.querySelector('.js-hamburger');
     if (hamburger) {
       var hamburgerMenu = function hamburgerMenu() {
@@ -71,7 +70,8 @@
       };
       hamburger.addEventListener('click', hamburgerMenu, false);
     }
-    // popup
+
+    // Popup
     function shouldShowPopup() {
       var lastSeen = localStorage.getItem('popupSeenTime');
       if (!lastSeen) return true;

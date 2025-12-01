@@ -441,7 +441,7 @@ body:not(.home) header {
 	height: 2px;
 	margin-bottom: 5px;
 	position: relative;
-	background: #492464 !important;
+	background: var(--color-primary) !important;
 	z-index: 1;
 	margin-left: 0;
 	transform-origin: 4.5px 2px;
