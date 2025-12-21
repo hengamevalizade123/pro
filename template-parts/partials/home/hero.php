@@ -1,22 +1,27 @@
 <section class="o-section c-section--hero pb-0 relative">
 	<img class="hero-after hero-ext border-radius h-100"
-		 src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-after.png" fetchpriority="high"
+		 src="https://pro.barghapp.com/wp-content/uploads/2025/12/hero-after.png" fetchpriority="high"
 		 alt="برقآپ">
 	<div class="o-section__wrapper">
 		<div class="c-hero u-flex">
 			<div class="c-hero__info u-flex u-flex--column justify-end">
 				<h1 class="m-0">
-					تجمیع و فــروش
-					<span>
-					بــرق نیروگاههای مقیاس کوچک
-			        </span>
+				<?php
+				if( have_rows('hero') ): // نام فیلد Repeater یا Flexible
+					while( have_rows('hero') ): the_row();
+						echo get_sub_field('hero-title');
+					endwhile;
+				endif;
+				?>
 				</h1>
 				<p class="m-0">
-					برق‌آپ پرو با تجمیع ظرفیت نیروگاه‌های کوچک
-					از&nbsp;جمله&nbsp;تجدیدپذیر،&nbsp;گازسوز&nbsp;و&nbsp;برق‌آبی،
-					<br>
-					امکان فروش نقد، پایدار و منصفانه‌ی برق در
-					بازار&nbsp;عمده‌فروشی&nbsp;و&nbsp;بورس&nbsp;انرژی&nbsp;را&nbsp;فراهم&nbsp;می‌کند.
+					<?php
+					if( have_rows('hero') ): // نام فیلد Repeater یا Flexible
+						while( have_rows('hero') ): the_row();
+							echo get_sub_field('hero-desc');
+						endwhile;
+					endif;
+					?>
 				</p>
 				<div class="c-action u-flex gap-md justify-center">
 					<a class="btn primary-button" href="tel:+989910532898">
@@ -47,7 +52,7 @@
 								 alt="برقآپ">
 							<span>
 								نیروگاه‌های
-							خورشیدی
+							تجدید‌پذیر
 							</span>
 						</a>
 					</li>
@@ -56,6 +61,6 @@
 		</div>
 	</div>
 	<img class="hero-before hero-ext border-radius h-100"
-		 src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-before.png" fetchpriority="high"
+		 src="https://pro.barghapp.com/wp-content/uploads/2025/12/hero-before.png" fetchpriority="high"
 		 alt="برقآپ">
 </section>

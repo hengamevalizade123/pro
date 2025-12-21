@@ -49,38 +49,53 @@
 									</a>
 									<ul class="u-flex u-flex--column">
 										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های CHP</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های خورشیدی</a></li>
+										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های تجدیدپذیر</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="parent-sub-menu u-flex flex-column <?php if (is_page('about-us')) echo 'active'; ?>"
+									   href="https://pro.barghapp.com/about-us/">
+										درباره ی ما
+										<span class="has-sub-menu"></span>
+									</a>
+									<ul class="u-flex u-flex--column">
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/about-us/">درباره ی ما</a>
+										</li>
+										<li>
+											<a class="sub-menu second-sub-menu" href="#">سوالات متداول</a>
+										</li>
 									</ul>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
 									   href="#">
 										تماس با ما
+										<span class="has-sub-menu"></span>
 									</a>
+									<ul class="u-flex u-flex--column">
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/about-us/">تماس با ما</a>
+										</li>
+										<li>
+											<a class="sub-menu second-sub-menu" href="#">همکاری با ما</a>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
 									   href="#">
-										همکاری با ما
+										وبلاگ
+										<span class="has-sub-menu"></span>
 									</a>
-								</li>
-								<li>
-									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="#">
-										درباره ی ما
-									</a>
-								</li>
-								<li>
-									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="#">
-										سوالات متداول
-									</a>
-								</li>
-								<li>
-									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="#">
-										مقالات
-									</a>
+									<ul class="u-flex u-flex--column">
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/blog/">مقالات</a>
+										</li>
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/news/">اخبار</a>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</div>
@@ -93,7 +108,7 @@
 					</nav>
 					<div class="c-main-header__cta u-flex items-center">
 						<a class="c-main-header__panel u-flex items-center border-radius gap-sm secondary-btn"
-						   href="https://preview.barghapporo.com/login?redirect=%2F" target="_blank">
+						   href="https://barghappro.com/" target="_blank">
 							<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.75 15.17H4.96C1.59 15.17 0.75 14.33 0.75 10.96V4.96C0.75 1.59 1.59 0.75 4.96 0.75H15.49C18.86 0.75 19.7 1.59 19.7 4.96" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 								<path d="M8.75 19.6898V15.1699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>

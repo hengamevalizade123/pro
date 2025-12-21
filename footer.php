@@ -21,8 +21,10 @@
 							 alt="برقآپ">
 					</div>
 					<p class="txt-justify">
-						برق‌آپ پرو سامانه تجمیع خرید برق تولیدی نیروگاه‌های مقیاس کوچک، خورشیدی (انشعابی و غیرانشعابی)، برقابی، بادی و آبی می‌باشد که بصورت یک نیروگاه مجازی یکپارچه فعالیت می‌کند.
-						مالکین این نیروگاه‌ها می‌توانند برق تولیدی نیروگاه خود را با ثبت‌نام در سامانه برق‌آپ پرو و با انعقاد قرارداد با بهترین شرایط و کمترین ریسک به‌فروش برسانند.
+						برق‌آپ پرو سامانه تجمیع خرید برق تولیدی نیروگاه‌های مقیاس کوچک، خورشیدی (انشعابی و غیرانشعابی)،
+						برقابی، بادی و آبی می‌باشد که بصورت یک نیروگاه مجازی یکپارچه فعالیت می‌کند.
+						مالکین این نیروگاه‌ها می‌توانند برق تولیدی نیروگاه خود را با ثبت‌نام در سامانه برق‌آپ پرو و با
+						انعقاد قرارداد با بهترین شرایط و کمترین ریسک به‌فروش برسانند.
 					</p>
 				</div>
 				<div class="c-footer__col">
@@ -34,7 +36,7 @@
 							<a href="#" title="بلاگ برق‌آپ">تامین برق</a>
 						</li>
 						<li>
-							<a href="#" title="درباره ما">درباره ما</a>
+							<a href="https://pro.barghapp.com/about-us/" title="درباره ما">درباره ما</a>
 						</li>
 						<li>
 							<a href="#" title="تماس با ما">تماس با ما</a>
@@ -69,8 +71,9 @@
 								تماس با ما :
 							</strong>
 							<a class="u-flex" href="tel:+989910532898" title="پشتیبانی">۰۹۹۱۰۵۳۲۸۹۸
+
 							</a>
-							<a href="mailto:info@pro.barghapp.com">info@pro.barghapp.com</a>
+							<a href="mailto:pro@barghapp.com">pro@barghapp.com</a>
 						</li>
 					</ul>
 				</div>
@@ -79,12 +82,13 @@
 						<li class="u-flex items-end justify-center">
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.png"
+								<img src="https://pro.barghapp.com/wp-content/uploads/2025/12/enamad.webp"
 									 alt="برقآپ">
 							</a>
 						</li>
 						<li class="u-flex items-end justify-center">
-							<a class="u-flex items-center" href="https://eitaa.com/barghapp" target="_blank" aria-label="ایتا"
+							<a class="u-flex items-center" href="https://eitaa.com/barghapp" target="_blank"
+							   aria-label="ایتا"
 							   rel="nofollow"><span
 									class="elementor-icon-list-icon">
 <svg height="40px" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 8552.71 3770.5"><g><path
@@ -98,13 +102,13 @@
 							</a>
 						</li>
 						<li class="u-flex items-end justify-center">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/samandehi.png"
+							<img src="https://pro.barghapp.com/wp-content/uploads/2025/12/samandehi.webp"
 								 alt="برقآپ">
 						</li>
 						<li class="u-flex items-end justify-center">
 							<a href="https://trustseal.enamad.ir/?id=609733&Code=XfoPiDEewxqO6i3c6AdqbgHH1TOEMqu0"
 							   target="_blank" aria-label="اینماد">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enamad.png"
+								<img src="https://pro.barghapp.com/wp-content/uploads/2025/12/enamad.webp"
 									 alt="برقآپ">
 							</a>
 						</li>
@@ -158,19 +162,19 @@
 		</div>
 	</div>
 </footer>
-<div id="popup-overlay">
-	<div class="popup-box-content u-flex h-100 w-100 items-center justify-center">
-		<div id="popup-box" class="u-flex border-radius">
-			<div id="popup-close">×</div>
-			<!--			<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">-->
-			<a class="u-flex border-radius" href="https://barghapp.com/webinar-chp/">
-				<!--			<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/popuppaye.webp" alt="برقآپ">-->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/popup.jpg" alt="برقآپ">
-			</a>
-		</div>
-	</div>
-
-</div>
+<!--<div id="popup-overlay">-->
+<!--	<div class="popup-box-content u-flex h-100 w-100 items-center justify-center">-->
+<!--		<div id="popup-box" class="u-flex border-radius">-->
+<!--			<div id="popup-close">×</div>-->
+<!--					<a class="u-flex border-radius" href="https://plus.barghapp.com/established/">-->
+<!--			<a class="u-flex border-radius" href="https://barghapp.com/webinar-chp/">-->
+<!--					<img src="--><?php ////echo get_template_directory_uri(); ?><!--/assets/images/popuppaye.webp" alt="برقآپ">-->
+<!--				<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/popup.jpg" alt="برقآپ">-->
+<!--			</a>-->
+<!--		</div>-->
+<!--	</div>-->
+<!---->
+<!--</div>-->
 <?php wp_footer(); ?>
 
 </body>

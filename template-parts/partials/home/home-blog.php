@@ -12,7 +12,7 @@
 					بــــروز تــــرین آمــــوزش ها و اخبــار صــنــعــت بــــرق
 				</h3>
 			</div>
-			<div class="c-slider-blogs h-100"
+			<div class="carousel c-slider-blogs h-100"
 				 data-flickity='{"wrapAround": true, "autoPlay": 3500,"prevNextButtons": false,"cellAlign": "right","groupCells": true}'>
 <!--				--><?php
 //				$args = array(
