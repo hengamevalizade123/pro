@@ -2,12 +2,12 @@
 ///* Template Name: About Us Page */
 get_header();
 ?>
-	<section class="o-section c-section--main-page pt-0">
+	<section class="o-section c-section--main-page pb-0 pt-0 c-section-about">
 		<div class="o-section__wrapper">
 			<div class="c-breadcrumbs">
 				<?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
 			</div>
-			<h1 class="title title-left">
+			<h1 class="title title-left u-flex items-center gap-sm title-sec-content">
 				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
 						  stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17,8 +17,10 @@ get_header();
 					<path d="M12 8.1001V17.6601" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
 						  stroke-linejoin="round"/>
 				</svg>
-
-				دربــاره ی بــرق آپ پرو
+				دربــاره ی
+				<span>
+					بــرق آپ پرو
+				</span>
 			</h1>
 			<div class="c-about u-flex u-flex--column">
 				<div class="c-about__desc">
@@ -26,49 +28,30 @@ get_header();
 						برق‌آپ پــــرو، اولین سامانه هوشمند تجمیع و فــروش بــرق نیروگاهها در ایران
 					</h2>
 					<p class="txt-justify m-0">
-						برقاپ پرو یک پلتفرم تخصصی در حوزه بازار برق است که با هدف تحلیل هوشمند داده‌ها، تجمیع منابع، افزایش شفافیت و پشتیبانی از تصمیم‌گیری حرفه‌ای برای بازیگران بازار برق راه‌اندازی شده است. تمرکز اصلی ما بر توانمندسازی نیروگاه‌های تجدیدپذیر و CHP و سایر فعالان کلیدی این بازار است.
-
-						ما در برقاپ پرو بر این باوریم که آینده بازار برق، بدون دسترسی به داده‌های شفاف، تحلیل‌های دقیق و ابزارهای عملیاتی قابل اتکا و قابل تصور نیست. از همین رو، بستری یکپارچه طراحی کرده‌ایم که نیازهای واقعی نیروگاه‌ها، مشترکین بزرگ و فعالان بازار برق را به‌صورت هوشمند و عملیاتی پاسخ دهد و مسیر تصمیم‌سازی آگاهانه را هموار کند .
+					<?php
+					echo get_field('about-desc');
+					?>
 					</p>
 				</div>
+
+<?php
+$images = get_field('about-gallery');
+//				var_dump($images);
+if( $images ): ?>
 				<div class="c-about__slider"
 					 data-flickity='{"wrapAround": true, "autoPlay": 5500,"pageDots":false,"prevNextButtons": false,"rightToLeft": true,"cellAlign": "right"}'>
+					<?php foreach( $images as $image ): ?>
 					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-1.webp"
-							 alt="برقآپ">
+							<a href="<?php echo esc_url($image['url']); ?>" target="_blank">
+								<img class="border-radius h-100"
+									 src="<?php echo esc_url($image['sizes']['medium']); ?>"
+									 alt="<?php echo esc_attr($image['alt']); ?>">
+							</a>
 					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-2.webp"
-							 alt="برقآپ">
-					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-3.webp"
-							 alt="برقآپ">
-					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-4.webp"
-							 alt="برقآپ">
-					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-5.webp"
-							 alt="برقآپ">
-					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-6.webp"
-							 alt="برقآپ">
-					</div>
-					<div class="c-about__slide">
-						<img class="border-radius h-100"
-							 src="<?php echo get_template_directory_uri(); ?>/assets/images/namayeshgah-1.webp"
-							 alt="برقآپ">
-					</div>
+					<?php endforeach; ?>
+
 				</div>
+<?php endif; ?>
 				<div class="c-about__desc">
 					<h2 class="m-0 sub-title">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,20 +61,9 @@ get_header();
 						</svg>
 						مأموریت ما
 					</h2>
-					<p class="txt-justify m-0">
-						مأموریت برقاپ پرو، ساده‌سازی پیچیدگی‌های بازار برق و تسریع فرآیند تولید تا فروش انرژی الکتریکی در نیروگاه‌های تجدیدپذیر و CHP است. ما با تکیه بر تحلیل داده، ابزارهای هوشمند و تجمیع منابع، به کاربران خود کمک می‌کنیم تا:
-					</p>
-					<ul>
-						<li>
-							ریسک‌های عملیاتی و اقتصادی خود را به‌صورت مؤثرتری مدیریت کنند
-						</li>
-						<li>
-							تصمیمات اقتصادی دقیق‌تر و آگاهانه‌تری اتخاذ نمایند
-						</li>
-						<li>
-							از فرصت‌های موجود در بازار برق، حداکثر بهره‌برداری را داشته باشند.
-						</li>
-					</ul>
+					<?php
+					echo get_field('responsibility');
+					?>
 				</div>
 				<div class="c-about__desc">
 					<h2 class="m-0 sub-title">
@@ -103,13 +75,11 @@ get_header();
 							<path d="M5.47004 11.65C4.72004 11.41 4.06004 10.97 3.54004 10.45C2.64004 9.44998 2.04004 8.24998 2.04004 6.84998C2.04004 5.44998 3.14004 4.34998 4.54004 4.34998H5.19004C4.99004 4.80998 4.89004 5.31998 4.89004 5.84998V8.84998C4.89004 9.84998 5.10004 10.79 5.47004 11.65Z" stroke="#696969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							<path d="M18.53 11.65C19.28 11.41 19.94 10.97 20.46 10.45C21.36 9.44998 21.96 8.24998 21.96 6.84998C21.96 5.44998 20.86 4.34998 19.46 4.34998H18.81C19.01 4.80998 19.11 5.31998 19.11 5.84998V8.84998C19.11 9.84998 18.9 10.79 18.53 11.65Z" stroke="#696969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
-
 						چشم‌انداز ما
 					</h2>
-					<p class="txt-justify m-0">
-						چشم‌انداز برقاپ پرو، تبدیل شدن به مرجع حرفه‌ای تحلیل و مدیریت بازار برق و یکی از بازیگران اثرگذار در توسعه خدمات نوین انرژی برای نیروگاه‌های مقیاس کوچک و تجدیدپذیر است؛ به‌ویژه در حوزه تجمیع‌کنندگی و مدیریت یکپارچه منابع انرژی.
-						برقاپ پرو در افق پیش‌رو می‌کوشد به مرجع اصلی معاملات انرژی الکتریکی تولیدی بخش عمده‌ای از نیروگاه‌های تجدیدپذیر و کوچک‌مقیاس کشور تبدیل شود و نقشی کلیدی در شفاف‌سازی، کارایی و پایداری بازار برق ایفا کند.
-					</p>
+						<?php
+						echo get_field('vision');
+						?>
 				</div>
 				<div class="logo-section">
 					<div class="content-04__slider"
@@ -168,35 +138,14 @@ get_header();
 
 						چرا برقاپ پرو
 					</h2>
-					<p class="txt-justify m-0">
-						برقاپ پرو، همراه هوشمند نیروگاه‌های تجدیدپذیر و CHP در بازار برق است.
-					</p>
-					<ul>
-						<li>
-							شفافیت کامل در خرید و فروش انرژی
-							کنترل و پایش دقیق معاملات در یک بستر قابل اعتماد.
-						</li>
-						<li>
-							ابزارهای طراحی‌شده بر اساس نیاز واقعی نیروگاه‌ها
-							راهکارهایی عملیاتی، نه تئوریک.
-						</li>
-						<li>
-							گزارش‌های روزانه تولید و عملکرد نیروگاه
-							تصمیم‌گیری سریع، دقیق و مبتنی بر داده.
-						</li>
-						<li>
-							گزارش‌های مالی شفاف متناسب با میزان تولید
-							درک روشن از درآمد، تعهدات و بازده اقتصادی.
-							</li>
-						<li>
-							حداکثرسازی فروش انرژی و کاهش ریسک جرائم عدم تولید
-							مدیریت هوشمند تعهدات پیش از دوره.
-						</li>
-						<li>
-							هم‌راستا با آینده بازار برق ایران
-							توسعه‌پذیر، منعطف و آماده نقش‌آفرینی در تجمیع‌کن
-						</li>
-					</ul>
+					<?php
+					echo get_field('about-reason');
+					?>
+				</div>
+				<div class="c-about__desc">
+					<?php
+					echo get_field('about-more-desc');
+					?>
 				</div>
 			</div>
 		</div>

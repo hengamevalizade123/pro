@@ -13,7 +13,7 @@ get_header('main');
 		<div class="o-section__wrapper">
 			<?php if (function_exists("rank_math_the_breadcrumbs")) rank_math_the_breadcrumbs(); ?>
 
-			<h1 class="title title-left">
+			<h1 class="title title-left title-sec-content">
 				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M20.5 11.3V7.04001C20.5 3.01001 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01001 3.5 7.04001V18.3C3.5 20.96 4.96001 21.59 6.73001 19.69L6.73999 19.68C7.55999 18.81 8.80999 18.88 9.51999 19.83L10.53 21.18"
@@ -30,12 +30,14 @@ get_header('main');
 				</svg>
 				<?php
 				if (is_category() || is_tag() || is_tax()) {
-					echo single_term_title() . ' برق‌آپ ';
+					echo single_term_title() . '<span> برق‌آپ پرو </span>';
 				} else {
-					echo 'مقالات برق‌آپ';
+					echo '	مقالات
+			<span>برق‌آپ پرو</span>';
 				}
 				?>
 			</h1>
+
 			<div class="c-archive-blog">
 				<ul class="u-flex flex-wrap gap-md wrap p-0 items-start">
 					<?php
@@ -137,7 +139,7 @@ get_header('main');
 
 									<div class="c-btn-read-more relative items-center u-flex justify-end">
 										<a href="<?php the_permalink(); ?>" type="submit"
-										   class="c-btn-primary p-0 u-flex items-center">
+										   class="c-btn-primary p-0 u-flex items-center w-100">
 											<span>ادامه مطلب</span>
 										</a>
 									</div>

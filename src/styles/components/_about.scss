@@ -36,6 +36,8 @@
 
 		img {
 			width: 100%;
+			height: 170px;
+			object-fit: cover;
 		}
 	}
 
@@ -47,5 +49,27 @@
 		margin-bottom: 16px;
 		max-width: 100%;
 		text-align: justify;
+	}
+}
+
+.title-sec-content {
+	overflow: hidden;
+	color: rgb(41, 45, 50);
+	@include font-size(24px, 1.8);
+	white-space: nowrap;
+
+	span {
+		color: var(--color-secondary);
+	}
+
+	&:after {
+		content: "";
+		left: 0;
+		right: 12px;
+		width: 100%;
+		height: 1px;
+		background: var(--color-dark-20);
+		position: relative;
+		display: inline-block;
 	}
 }
