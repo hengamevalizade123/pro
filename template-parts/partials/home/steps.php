@@ -85,7 +85,7 @@
 									</p>
 								</li>
 							<li>
-								<a class="u-flex" href="https://adm.barghapporo.com/login?redirect=%2F">
+								<a class="u-flex" href="https://barghappro.com/login">
 									<img class="img-video-bef img-video-left border-radius w-100"
 										 src="<?php echo get_sub_field('img-item-07')['url']?>"
 										 alt="<?php echo get_sub_field('img-item-07')['alt']?>">

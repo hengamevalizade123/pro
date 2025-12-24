@@ -53,6 +53,21 @@
 									</ul>
 								</li>
 								<li>
+									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
+									   href="#">
+										تماس با ما
+										<span class="has-sub-menu"></span>
+									</a>
+									<ul class="u-flex u-flex--column">
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/contact-us/">تماس با ما</a>
+										</li>
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/employment/">همکاری با ما</a>
+										</li>
+									</ul>
+								</li>
+								<li>
 									<a class="parent-sub-menu u-flex flex-column <?php if (is_page('about-us')) echo 'active'; ?>"
 									   href="https://pro.barghapp.com/about-us/">
 										درباره ی ما
@@ -63,22 +78,7 @@
 											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/about-us/">درباره ی ما</a>
 										</li>
 										<li>
-											<a class="sub-menu second-sub-menu" href="#">سوالات متداول</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a class="u-flex flex-column <?php if (is_page('about')) echo 'active'; ?>"
-									   href="#">
-										تماس با ما
-										<span class="has-sub-menu"></span>
-									</a>
-									<ul class="u-flex u-flex--column">
-										<li>
-											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/about-us/">تماس با ما</a>
-										</li>
-										<li>
-											<a class="sub-menu second-sub-menu" href="#">همکاری با ما</a>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/faq/">سوالات متداول</a>
 										</li>
 									</ul>
 								</li>

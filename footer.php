@@ -33,20 +33,23 @@
 					</div>
 					<ul class="u-flex gap-sm u-flex--column">
 						<li>
-							<a href="#" title="بلاگ برق‌آپ">تامین برق</a>
-						</li>
-						<li>
 							<a href="https://pro.barghapp.com/about-us/" title="درباره ما">درباره ما</a>
 						</li>
 						<li>
-							<a href="#" title="تماس با ما">تماس با ما</a>
+							<a href="https://pro.barghapp.com/contact-us/" title="تماس با ما">تماس با ما</a>
 						</li>
 						<li>
-							<a href="#" title="چرا برقآپ">چرا برق‌آپ پرو</a>
+							<a href="https://pro.barghapp.com/faq/" title="سوالات متداول">سوالات متداول</a>
 						</li>
 						<li>
-							<a href="#" title="بلاگ برقآپ">
+							<a href="https://pro.barghapp.com/blog/" title="بلاگ برقآپ">
 								بلاگ برق‌آپ
+								پرو
+							</a>
+						</li>
+						<li>
+							<a href="https://pro.barghapp.com/news/" title="بلاگ برقآپ">
+								اخبار برق‌آپ
 								پرو
 							</a>
 						</li>
