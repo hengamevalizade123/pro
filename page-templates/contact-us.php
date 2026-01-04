@@ -28,7 +28,14 @@ get_header();
 					<?php echo do_shortcode('[contact-form-7 id="631b8d1" title="تماس با ما"]'); ?>
 				</div>
 				<div class="c-contact__info padding-md flex-1">
-					<img src="https://pro.barghapp.com/wp-content/uploads/2025/12/contact.gif" alt="">
+					<video
+						autoplay
+						loop
+						muted
+						playsinline
+						style="display:block" class="gif">
+						<source src="<?php echo get_template_directory_uri(); ?>/assets/video/contact.webm" type="video/webm">
+					</video>
 					<p class="d-flex gap-sm items-start mt-0">
 						<strong class="u-flex item-center nowrap">
 							<svg width="18" height="18" viewBox="0 0 24 24" fill="none"

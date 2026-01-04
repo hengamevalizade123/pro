@@ -18,11 +18,23 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!--	search console-->
 	<meta name="google-site-verification" content="jWLb2O08HmRedgXbNfzCD5aPDx_0mMZ2tynQO_6nlEM"/>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5FFCN3CJ');</script>
+	<!-- End Google Tag Manager -->
+
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FFCN3CJ"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'starter-theme'); ?></a>
 	<header id="masthead" class="site-header">
@@ -64,6 +76,9 @@
 										</li>
 										<li>
 											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/employment/">همکاری با ما</a>
+										</li>
+										<li>
+											<a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/cooperation/">استخدام</a>
 										</li>
 									</ul>
 								</li>

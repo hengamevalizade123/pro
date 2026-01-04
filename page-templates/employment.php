@@ -19,13 +19,13 @@ get_header();
 					<path d="M11.9955 13.75H12.0045" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
 						  stroke-linejoin="round"/>
 				</svg>
-				فرم همکاری با
+				<?php the_title(); ?>
 				<span>
 					بــرق آپ پرو
 				</span>
 			</h1>
 			<div class="c-employment">
-				<?php echo do_shortcode('[gravityform id="1" title="true"]'); ?>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</section>
