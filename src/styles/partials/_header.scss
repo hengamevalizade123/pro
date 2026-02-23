@@ -27,7 +27,7 @@ body:not(.home) header {
 	nav {
 		@include mq($until: desktop) {
 			order: 1;
-			flex: 1
+			flex: .7;
 		}
 	}
 

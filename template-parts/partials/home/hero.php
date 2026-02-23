@@ -35,7 +35,7 @@
 				</div>
 				<ul class="u-flex space-between gap-md p-0 mb-0">
 					<li class="border-radius flex-1">
-						<a class="u-flex items-center u-flex--row justify-center gap-md h-100" href="#">
+						<a class="u-flex items-center u-flex--row justify-center gap-md h-100" href="https://pro.barghapp.com/blog/chp/">
 							<img class="border-radius h-100"
 								 src="<?php echo get_template_directory_uri(); ?>/assets/images/chp.svg" fetchpriority="high"
 								 alt="برقآپ">
@@ -46,7 +46,7 @@
 						</a>
 					</li>
 					<li class="border-radius flex-1 u-flex items-center justify-center gap-md">
-						<a class="u-flex items-center u-flex--row justify-center gap-md h-100" href="#">
+						<a class="u-flex items-center u-flex--row justify-center gap-md h-100" href="https://pro.barghapp.com/blog/renewable-energy-plants/">
 							<img class="border-radius h-100"
 								 src="<?php echo get_template_directory_uri(); ?>/assets/images/solar-icon.svg" fetchpriority="high"
 								 alt="برقآپ">

@@ -81,7 +81,10 @@
 				color: var(--color-secondary-80);
 			}
 		}
-
+		strong {
+			color: var(--color-dark);
+			font-weight: 700;
+		}
 		p {
 			@include font-size(15px, 1.8);
 			margin: 0 0 0.5em;
@@ -91,11 +94,6 @@
 			.c-blog & {
 				display: block;
 				min-height: 20px;
-			}
-
-			strong {
-				color: var(--color-dark-01);
-				font-weight: 700;
 			}
 		}
 
@@ -143,6 +141,19 @@
 					color: var(--color-dark-01);
 					font-weight: 700;
 				}
+			}
+		}
+
+		li {
+
+			&:before {
+				content: "";
+				height: 6px;
+				width: 6px;
+				border-radius: 20px;
+				background: var(--color-secondary);
+				display: inline-block;
+				margin-left: 8px;
 			}
 		}
 
@@ -870,6 +881,7 @@ table:not(.c-page__table.js-tabs table) tr {
 		z-index: -1;
 	}
 }
-.pdf{
+
+.pdf {
 	margin-top: 24px;
 }

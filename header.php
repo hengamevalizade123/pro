@@ -60,8 +60,9 @@
 										<span class="has-sub-menu"></span>
 									</a>
 									<ul class="u-flex u-flex--column">
-										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های CHP</a></li>
-										<li><a class="sub-menu second-sub-menu" href="#">نیروگاه‌های تجدیدپذیر</a></li>
+										<li><a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/blog/chp/">نیروگاه‌های CHP</a></li>
+										<li><a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/blog/renewable-energy-plants/">نیروگاه‌های تجدیدپذیر</a></li>
+										<li><a class="sub-menu second-sub-menu" href="https://pro.barghapp.com/aggregation/">تجمیع‌کنندگی</a></li>
 									</ul>
 								</li>
 								<li>
